@@ -1,0 +1,27 @@
+{
+    "presets": [
+        "react",
+        ["env", {
+            "modules": false,
+            "useBuiltIns": true
+        }]
+    ],
+
+    "plugins": [
+        // Use the transform-runtime plugin to replace Babel helpers with calls to babel-runtime.
+        // https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime
+        ["transform-runtime", {
+            // Disable polyfill transform and regenerator transform, because we still want to use babel-polyfill so that
+            // instance methods work (babel-plugin-transform-runtime does not add instance methods).
+            // https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-runtime#babel-plugin-transform-runtime
+            "polyfill": false,
+            "regenerator": false
+        }],
+
+        // Convert member imports of semantic-ui-react components to default imports and add semantic-ui-less imports
+        // for the used components.
+        ["transform-semantic-ui-react-imports", {
+            "addLessImports": true
+        }]
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "tailored-semantic-ui-react-bundles-with-webpack",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "semantic ui",
+        "semantic-ui-react",
+        "semantic-ui-less",
+        "babel-plugin-transform-semantic-ui-react-imports",
+        "semantic-ui-less-module-loader",
+        "webpack",
+        "tailored",
+        "customize",
+        "custom"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Stefan Kleeschulte",
+        "url": "https://github.com/skleeschulte"
+    },
+    "main": "index.js",
+    "scripts": {
+        "empty-dist": "rimraf ./dist/**/*",
+        "build": "npm run empty-dist && cross-env NODE_ENV=production webpack",
+        "serve": "http-server ./dist/"
+    },
+    "devDependencies": {
+        "babel-core": "^6.25.0",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-plugin-transform-semantic-ui-react-imports": "^1.1.1",
+        "babel-preset-env": "^1.5.2",
+        "babel-preset-react": "^6.24.1",
+        "cross-env": "^5.0.1",
+        "css-loader": "^0.28.4",
+        "extract-text-webpack-plugin": "^2.1.2",
+        "file-loader": "^0.11.2",
+        "html-webpack-plugin": "^2.28.0",
+        "http-server": "^0.10.0",
+        "postcss-cssnext": "^2.11.0",
+        "postcss-loader": "^2.0.6",
+        "rimraf": "^2.6.1",
+        "semantic-ui-less-module-loader": "^1.0.0",
+        "webpack": "^2.6.1"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.23.0",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "semantic-ui-less": "^2.2.10",
+        "semantic-ui-react": "^0.68.5"
+    }
+}

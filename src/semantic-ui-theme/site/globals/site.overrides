@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+// Load local lato font (instead of using Google fonts, which is disabled in site.variables)
+// See https://github.com/Semantic-Org/Semantic-UI/issues/1521
+@import '../../../../assets/fonts/lato/stylesheet.css';

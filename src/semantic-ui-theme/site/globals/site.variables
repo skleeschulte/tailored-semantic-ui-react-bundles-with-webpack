@@ -1,0 +1,15 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+// To fix https://github.com/Semantic-Org/Semantic-UI-LESS/issues/14
+// (See https://github.com/gadyonysh/semantic-ui-less-module-loader#to-fix-httpsgithubcomsemantic-orgsemantic-ui-lessissues14)
+@imagePath : '../assets/images';
+@fontPath  : '../assets/fonts';
+
+// Disable importing Google fonts because the fonts shall be packaged locally
+// (see site/global/site.overrides and https://github.com/Semantic-Org/Semantic-UI/issues/1521)
+@importGoogleFonts: false;
+
+// Change the red color to demonstrate theming
+@red: #0000DD;
