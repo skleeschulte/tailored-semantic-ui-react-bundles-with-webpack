@@ -8,7 +8,7 @@ when bundling with Webpack.
 ## Features
 
 - Member imports from `semantic-ui-react` are transformed to default
-  imports to reduce the bundle size (vendor js chunk):  
+  imports to reduce the bundle size (vendors chunk):  
   `import { Button } from 'semantic-ui-react';` becomes  
   `import Button from 'semantic-ui-react/dist/es/elements/Button/Button.js';`  
   
@@ -46,3 +46,9 @@ when bundling with Webpack.
     npm install
     npm run build
     npm run serve
+
+## Version information
+
+The latest version of this repository (master) demonstrates usage of Webpack 4 and Babel 7 along with all the latest
+versions of dependencies as of Feb. 27, 2019. The initial version demonstrating usage of Webpack 2 and Babel 6 from
+June 2017 can be found under the Tag `webpack2-babel6`.

@@ -4,7 +4,7 @@
 
 const postcssConfig = {
     plugins: {
-        'postcss-cssnext': {}, // <-- this includes autoprefixer
+        'postcss-preset-env': {}, // <-- this includes autoprefixer
     }
 };
 
